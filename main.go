@@ -9,6 +9,7 @@ func main() {
 	js.Global().Set("add", js.FuncOf(add))
 	js.Global().Set("createObject", js.FuncOf(createObject))
 	js.Global().Set("createPerson", js.FuncOf(createPerson))
+	js.Global().Get("console").Call("log", "hi")
 	<-channel
 }
 
